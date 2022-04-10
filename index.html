@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!--부트스트랩-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Fresca&family=Patrick+Hand&family=Khand:wght@500&family=Courgette&family=Ubuntu&display=swap" rel="stylesheet">
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="jquery.flipster.min.css">
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="w3-black">
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-black">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-brown">
+        <p><i class="fa-solid fa-house-chimney-window w3-large"></i> HOME</p>
+        <hr>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-brown">
+        <p><i class="fa-solid fa-address-card w3-large"></i>ABOUT</p>
+        <hr>
+    </a>
+    <a href="#music" class="w3-bar-item w3-button w3-padding-large w3-hover-brown">
+        <p><i class="fa-solid fa-headphones-simple w3-large"></i>MUSIC</p>
+        <hr>
+    </a>
+    <a href="#memory" class="w3-bar-item w3-button w3-padding-large w3-hover-brown">
+        <p><i class="fa-solid fa-icons w3-large"></i>MEMORY</p>
+        <hr>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-brown">
+        <p><i class="fa fa-envelope w3-large"></i>CONTACT</p>
+        <hr>
+    </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="#" class="w3-bar-item w3-button" style="width:20% !important">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button" style="width:20% !important">ABOUT</a>
+        <a href="#music" class="w3-bar-item w3-button" style="width:20% !important">MUSIC</a>
+        <a href="#memory" class="w3-bar-item w3-button" style="width:20% !important">MEMORY</a>
+        <a href="#contact" class="w3-bar-item w3-button" style="width:20% !important">CONTACT</a>
+    </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
+        <div class="w3-content w3-center" id="home">
+            <h1>Welcome To My Page!</h1>
+            <p class="text"></p>
+        </div>
+
+        <!-- About Section -->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+            <h2><i class="fa-solid fa-address-card w3-xlarge w3-margin-right"></i>About me</h2>
+            <hr style="width:220px">
+            <p class="description">My name is won yeong Yoo.
+                I graduated from Hongik University majoring in computer engineering and I'm trying to become a developer.
+                So... I'm learning both front-end and back-end to become a full-stack web developer.
+                So far, I have learned c#, sql, html, css, and js, and now I'm learning jquery. Also, I will learn .net framework from now on.
+                Press the button if you want to know more about me.
+            </p>
+            <p class="center">
+                <button class="btn btn-outline-warning btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    More
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <h1 class="w3-padding w3-text-yellow w3-center">The skills I have...</h1>
+                    <hr>
+                    <h4 class="w3-margin-top w3-padding w3-text-black">Frontend skills</h4>
+                    <div class="row">
+                        <div class="col w3-opacity w3-hover-opacity-off">
+                            <img src="img/html.png">
+                        </div>
+                        <div class="col w3-opacity w3-hover-opacity-off">
+                            <img src="img/css.png">
+                        </div>
+                        <div class="col w3-opacity w3-hover-opacity-off">
+                            <img src="img/js.png">
+                        </div>
+                        <div class="col w3-opacity w3-hover-opacity-off">
+                            <img src="img/jquery.PNG">
+                        </div>
+                    </div>
+                    <h4 class="w3-padding w3-text-black">Available Languages</h4>
+                    <div class="row">
+                        <div class="col w3-opacity w3-hover-opacity-off">
+                            <img src="img/c.png">
+                        </div>
+                        <div class="col w3-opacity w3-hover-opacity-off">
+                            <img src="img/java.jpg">
+                        </div>
+                        <div class="col w3-opacity w3-hover-opacity-off">
+                            <img src="img/sql.PNG">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- End About Section -->
+        </div>
+        
+        <!-- Music Section-->
+        <div class="w3-padding-64 w3-content" id="music">
+            <h2><i class="fa-solid fa-headphones-simple w3-xlarge w3-margin-right"></i>Music of color </h2>
+            <hr style="width:220px">
+            <p class="description">If you choose a color, I recommend a music *.*</p>
+                <p class="description">Choose a color you like and click it now!<br>
+                Then ... click again if you want to stop the music!</p>
+            <div class="pads">
+                <div class="pad1 w3-margin">
+                    <audio class="paused" src="https://drive.google.com/uc?export=view&id=1SxoFuo1RvNFJbFKhn99w51zhABXpykNY"></audio>
+                </div>
+                <div class="pad2 w3-margin">
+                    <audio class="paused" src="https://drive.google.com/uc?export=view&id=1G5YdJKBv3vZabC-MD6SecT4CTI8iB9O2"></audio>
+                </div>
+                <div class="pad3 w3-margin">
+                    <audio class="paused" src="https://drive.google.com/uc?export=view&id=1TudYvi7T269KA5HNJDgCPdU1ZWgwIQrK"></audio>
+                </div>
+                <div class="pad4 w3-margin">
+                    <audio class="paused" src="https://drive.google.com/uc?export=view&id=1FwJufd2_ht2AnLrKJzh0yc4TuKezxkkv"></audio>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Memory Section -->
+        <div class="w3-padding-64 w3-content" id="memory">
+            <h2><i class="fa-solid fa-icons w3-xlarge w3-margin-right"></i>My Memories</h2>
+            <hr style="width:220px">
+            <p class="description">
+                If you want to come into my memories, take a look at the gallery below!
+            </p>
+
+            <!--Gallery-->
+            <div class="hero">
+                <div class="carousel">
+                    <ul>
+                        <li><img src="img/1_sanfran.jpg"></li>
+                        <li><img src="img/2_lasvegas.jpg"></li>
+                        <li><img src="img/3_Thailand.jpg"></li>
+                        <li><img src="img/4_singapore.jpg"></li>
+                        <li><img src="img/5_Itoshima.jpg"></li>
+                        <li><img src="img/6_Kyoto.jpg"></li>
+                        <li><img src="img/7_GrandCanyon.jpg"></li>
+                        <li><img src="img/8_Disneyland.jpg"></li>
+                        <li><img src="img/9_osaka.jpg"></li>
+                        <li><img src="img/10_Fukuoka.jpg"></li>
+                    </ul>
+                </div>
+            </div>
+        <!-- End Memory Section -->
+        </div>
+
+        <!-- Contact Section -->
+        <div class="w3-padding-64 w3-content w3-text-light-gray" id="contact">
+            <h2><i class="fa fa-envelope w3-xlarge w3-margin-right"></i>Contact Me</h2>
+            <hr style="width:220px">
+
+            <div class="w3-section">
+            <p><i class="fa-solid fa-map-location-dot w3-xxlarge w3-margin-right w3-text-khaki"></i> Seoul, Republic of Korea</p>
+            <p><i class="fa-solid fa-phone w3-xxlarge w3-margin-right w3-text-khaki"></i> +82 1021826015</p>
+            <p><i class="fa-solid fa-at w3-xxlarge w3-margin-right w3-text-khaki"></i> uwarm2727@gmail.com</p>
+            </div><br>
+            <p>Have a Questions? Send me a message:</p>
+
+            <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+            <p>
+                <button class="w3-button w3-khaki w3-text-black w3-padding-large" type="submit">
+                <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+            </p>
+            </form>
+        <!-- End Contact Section -->
+        </div>
+        
+            <!-- Footer -->
+        <footer class="w3-content w3-text-grey w3-xlarge w3-center w3-padding-16 w3-margin-top">
+            <a href="https://github.com/wonyoungee"><i class="fa-brands fa-github w3-xlarge w3-text-light-gray w3-hover-opacity w3-margin-right w3-margin-bottom"></i></a>
+            <a href="https://www.notion.so/zeroxne/52ee4099076f4a089ee3f9aa3401671f"><i class="fa-brands fa-trello w3-xlarge w3-text-light-gray w3-hover-opacity w3-margin-right"></i></a>
+            <i class="fa-brands fa-instagram w3-xlarge w3-text-light-gray w3-hover-opacity w3-margin-right"></i>
+            <i class="fa-brands fa-facebook-square w3-xlarge w3-text-light-gray w3-hover-opacity w3-margin-right"></i>
+            <p>Copyright © 2022 All rights reserved | Powered by won yeong.</p>
+        <!-- End footer -->
+        </footer>
+
+    <!-- END PAGE CONTENT -->
+    </div>
+    <script src="script.js"></script>
+    <script src="jquery.flipster.min.js"></script>
+    <script>
+        $('.carousel').flipster({
+            style:'carousel',
+            spacing: -0.3,
+        });
+    </script>
+</body>
+</html>
